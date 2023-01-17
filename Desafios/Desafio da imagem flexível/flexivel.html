@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+    <link rel="shortcut icon" href="rocket.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Este desafio serve para testar a adaptação da imagem conforme o tamanho da janela/tela usando apenas HTML</p>
+    <p>Caso não esteja conseguindo ver a imagem completa tente ampliar o tamanho da sua janela para uma melhor experiência :).
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="pequena.jpg" type="image/jpg">
+        <source media="(max-width:1200px )" srcset="media.jpg" type="image/jpg">
+        <img src="grande.jpg" alt="paisagem completa">
+    </picture>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*O none serve para tirar o sublinhado do link mesmo após ter o visitado */
+
+        a:visited {
+            color: darkred
+        }
+        a:hover {
+            color: rgb(61, 3, 3);
+            text-decoration: underline;
+        }
+
+        /*Para deixar o texto sublinhado e com uma cor diferente após passar o mouse por cima você pode utilizar o hover */
+
+        a:active {
+            color: greenyellow;
+        }
+
+        /*O active serve para mudar os elementos do link quando você estiver clicando nele */
+
+        a::after {
+            content: " [link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: grey;
+        }
+
+        /*O "::" serve para criar coisas sem precisar necessariamente do HTML */
+    </style>
+</head>
+<body>
+    <h1>Mudando a cor após visitar os links</h1>
+    <li><a href="https://www.youtube.com/watch?v=Qyqln4sfcDo" target="_blank">Canal do yt</a></li>
+    <li><a href="https://twitter.com/"target= "_blank">Twitter</a></li>
+    <li><a href="https://windowsclub.com.br/" target="_blank">Windows Club</a></li>
+    <li><a href="https://saude.abril.com.br/alimentacao/jabuticaba-e-bom-pra-que-conheca-os-beneficios-da-fruta/">Jabuticaba</a></li>
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightyellow;
+        }
+
+        header {
+            font-family: 'Times New Roman', Times, serif;
+            width: 600px;
+            background-color: #cd853f;
+            padding: 2px;
+            margin: auto;
+            font-size:25px;
+            text-align: center;
+            border-radius: 10px;
+        }  
+
+        main {
+            background-color: lightyellow;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 50px;
+        }
+
+        nav {
+            padding: 4px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.164);
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        h1#notícias {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        p#autor {
+            margin: 12px;
+        }
+        footer {
+            font-weight: lighter;
+            color: white;
+            background-color: saddlebrown;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="notícias">Notícias de Aveiro</h1>
+        <nav>
+            <a href="#">Manchetes</a>
+            <a href="#">Desporto</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Empregos</a>
+            <a href="#">Turismo</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+        </section>
+        <section id="notícias do dia">
+            <article>
+                <h2>Previsão climática para hoje</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, minus libero consequuntur nam at, deserunt ab similique totam vero omnis distinctio, aliquid in voluptas temporibus facere ipsam fuga tempore asperiores?</p>
+                <h3>Previsão para a próxima semana</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et velit reprehenderit consectetur exercitationem quis quas corrupti repudiandae dolorum saepe ipsa aliquam soluta debitis at, ut quasi laudantium repellat voluptates. Quo?</p>
+                <aside>
+                    <p id="autor">(Artigo escrito por Joaquim Ferreira)</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
